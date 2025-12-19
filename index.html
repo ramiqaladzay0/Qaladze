@@ -72,6 +72,15 @@
 
         footer { text-align: center; padding: 40px; color: var(--gold); font-weight: 100; border-top: 1px solid rgba(255,255,255,0.05); }
 
+        /* Style بۆ ژمارەی بینراوەکە لە لای ڕاست */
+        .counter-box {
+            text-align: right;
+            color: var(--gold);
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             .card { padding: 25px; }
@@ -86,6 +95,12 @@
         <header>
             <h1>قەڵادزێ</h1>
             <p class="subtitle">نیشتیمانی جوانی</p>
+            
+            <div class="counter-box">
+                <span id="busuanzi_container_site_pv" style="display:none">
+                    <span id="busuanzi_value_site_pv">...</span> بینراوە
+                </span>
+            </div>
         </header>
 
         <section class="card">
@@ -117,7 +132,7 @@
 
             <div class="info-box" style="border-right: 3px solid var(--red);">
                 <span class="date-title">٢٤ی نیسانی ١٩٨٢</span>
-                ڕۆژی ڕاپەڕینە مەزنەکەی خەڵکی شار دژی زوڵم، کە تێیدا دایکی شەهیدان (سەنییە خان) وەک یەکەم ژنە شەهید بووە سیمبولی بەرگری.
+                ڕۆژی ڕاپەڕینە مەزنەکەی خەڵکی شار دژی زوڵم، کە تێیدا دایکی شەهیدان (Seniye Khan) وەک یەکەم ژنە شەهید بووە سیمبولی بەرگری.
             </div>
         </section>
 
@@ -132,6 +147,8 @@
             بۆ هەمیشە لە دڵماندای قەڵادزێ • DESIGNED BY RAMI 
         </footer>
     </div>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </body>
 </html>
